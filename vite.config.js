@@ -23,7 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base:'/POEF-Homepage',
+  base:'/w/POEF-Homepage-79B8/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
