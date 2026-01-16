@@ -1,14 +1,10 @@
 <script>
 
-import Header from './components/Header.vue'
 import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
 
 export default {
   components: {
-    Header,
     Main,
-    Footer,
   }
 }
 
@@ -18,12 +14,9 @@ export default {
     <div>
       
       <el-container>
-        <el-header><Header/></el-header>
         <el-main><Main/></el-main>
-        <el-footer><Footer/></el-footer>
       </el-container>
       
-      <!-- 回到顶部 -->
       <el-backtop :right="40" :bottom="80" />
     </div>
 </template>
@@ -94,13 +87,11 @@ blockquote > p {
   margin-block-end: 0.5em;
 }
 
-/* 链接颜色装饰 */
 a {
   color: #3273dc;
   text-decoration: none;
 }
 
-/* 鼠标焦点悬浮在链接上的颜色装饰 */
 a:hover {
   color: #848484;
   border-bottom: dotted;
